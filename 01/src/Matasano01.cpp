@@ -1,9 +1,9 @@
 //============================================================================
 // Name        : Matasano01.cpp
 // Author      : Steven Aston
-// Version     :
-// Copyright   : 
-// Description : Hello World in C++, Ansi-style
+// Version     : 1.1
+// Copyright   : None
+// Description : Hex to base64 conversion
 //============================================================================
 
 #include <iostream>
