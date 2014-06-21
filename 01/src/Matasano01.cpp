@@ -40,11 +40,9 @@ string decToBin(unsigned n)
 {
     const size_t size = sizeof(n) * 8;
     char result[size];
-
     unsigned index = size;
-    do {
-        result[--index] = '0' + (n & 1);
-    } while (n >>= 1);
+    do {result[--index] = '0' + (n & 1);}
+    while (n >>= 1);
     return std::string(result + index, result + size);
 }
 
@@ -101,10 +99,10 @@ string hexToBase64 (string hex) {
 }
 
 int main() {
-	string input =
-	"49276d206b696c6c696e6720796f757220627261696e206c"
-	"696b65206120706f69736f6e6f7573206d757368726f6f6d";
+	//string input = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
 
-	cout << hexToBase64(input);
-
+	string input;
+	cout << "Enter what you'd like to base64.\n";
+	cin >> input;
+	cout << hexToBase64(input) << "\n\n";
 }
